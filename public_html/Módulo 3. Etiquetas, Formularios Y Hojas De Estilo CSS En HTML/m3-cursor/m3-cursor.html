@@ -1,0 +1,121 @@
+<!--Created on 15-ago-2019, 13:39:02-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>m3-cursor</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Usar para CSS internos-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!--Usar para ejecutar codigo--> 
+    <style>
+
+      body{
+        background-image: linear-gradient(to right,#ffcc99,#ccccff);
+      }
+
+      div{
+        cursor: crosshair;
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+        border: 5px solid #9999ff;
+        border-radius: 12px;
+        box-sizing: border-box;
+      }
+
+      section{
+        text-align: center;
+        border-radius: 7px;
+        border: 2px solid red;
+        background: #cccccc;
+      }
+
+      #parent-relative{
+        position: relative;
+        top: 100px;
+        left: 120px;
+        background-color: tomato;
+        z-index: 2;
+      }
+
+      #child-relative{
+        position: relative;
+        left: 120px;
+        background-color: tomato;
+        z-index: 1;
+      }
+
+      #parent-relative1{
+        position: relative;
+        border: 5px solid #66ff66;
+        background: aqua;
+      }
+
+      #child-relative1{
+        position: absolute;
+        top: 100px;
+        left: 110px;
+        border: 5px solid #66ff66;
+        background: aqua;
+      }
+
+      #parent-relative2{
+        position: relative;
+        top: 110px;
+        background: gold;
+        outline-color: #0056b3;
+        outline-width: 200px;
+      }
+
+      #child-relative2{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        background: gold;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <div id="parent-relative">
+        <a href="#">Parent<br>Movido del flujo natural de la pagina</a>
+        <div id="child-relative">
+          <a href="#">Child<br>Movido del flujo natural del padre</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="parent-relative1">
+        <a href="#">Parent<br>Sigue el flujo natural</a>
+        <div id="child-relative1">
+          <a href="#">Child<br>movido del flujo natural del padre</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="parent-relative2">
+        <a href="#">Parent<br>Sigue el flujo natural</a>
+        <div id="child-relative2">
+          <a href="#">Child<br>movido del flujo natural del padre</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

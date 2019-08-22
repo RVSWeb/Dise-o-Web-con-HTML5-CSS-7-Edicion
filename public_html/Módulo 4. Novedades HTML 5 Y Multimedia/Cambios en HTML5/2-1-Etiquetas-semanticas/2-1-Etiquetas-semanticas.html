@@ -1,0 +1,137 @@
+<!--Created on 15-ago-2019, 19:09:34-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap">  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-topnav.css">
+    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-social-bar.css">
+    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas.css">
+    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="../src/js/2-1-Etiquetas-semanticas-topnav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="header-h1-titulo">My Website.</h1>
+      <p class="header-h1-subtitulo">A website created by me.</p>
+    </header>
+
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Contents</a>
+        <a href="#">Examples</a>
+        <a href="#">About us</a>
+        <a href="#" class="icon" onclick="menuDesplegable()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <aside class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#" class="google"><i class="fa fa-google"></i></a> 
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+    </aside>
+
+
+    <aside class="row">
+      <div class="side">
+        <h2 class="h2-aside-titulo">About Me</h2>
+        <h5 class="h5-aside-subtitulo">Photo of me:</h5>
+        <img class="fake-img-200px" src="../src/img/fondo-200px.jpg"></img>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <img class="fake-img-60px" src="../src/img/fondo-60px.jpg"></img>
+        <img class="fake-img-60px" src="../src/img/fondo-60px.jpg"></img>
+        <img class="fake-img-60px" src="../src/img/fondo-60px.jpg"></img>
+      </div>
+
+      <main>
+        <hgroup>
+          <h2 class="h2-main-titulo">HEADING Title</h2>
+          <h5 class="h5-main-subtitulo" onload="verFecha()"></h5>
+        </hgroup>
+
+        <img class="fake-img"></img>
+        <p class="main-texto">Some text...</p>
+        <p class="main-texto-principal">
+          Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+      </main>
+    </aside>
+
+    <!-- URL : https://bootsnipp.com/snippets/rlXdE -->
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-center text-md-center">
+
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <h5>Principal</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-home"> Home</i></a>
+              <li><a href="javascript:void();"><i class="fa fa-book"> Contents</i></a>
+              <li><a href="javascript:void();"><i class="fa fa-file"> Examples</i></a>
+              <li><a href="javascript:void();"><i class="fa fa-smile-o"> About us</i></a>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <h5>Enterprise</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#"><i class="fa fa-star"> FAQ</i></a>
+              <li><a href="#"><i class="fa fa-pencil-square"> License</i></a>
+              <li><a href="#"><i class="fa fa-sitemap"> Sitemaps</i></a>
+              <li><a href="#"><i class="fa fa-flag"> Site Privacy policy</i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p>
+            Todos los proyectos creados estan en mi <br>
+            <a class="footer-enlace fa fa-github" href="https://github.com/RVSWeb/"> GitHub</a>
+          </p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">RVS</a></p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../src/js/2-1-Etiquetas-semanticas-topnav.js"></script>
+    <script src="../src/js/2-1-Etiquetas-semanticas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Checkbox Demo from CSSCheckbox.com</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="checkbox select">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="../src/css/img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+
+      body{
+        background: linear-gradient(90deg,#e66465, #9198e5);
+        box-sizing: border-box;
+      }
+
+      div#contenedor-cabecera{
+        margin: 0px auto;
+        padding: 5%;
+        box-sizing: border-box;
+      }
+
+      header{
+        margin: 20px auto;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      hgroup{
+        width: 100%;
+        margin: 20px auto;
+        border: 5px solid rgb(180,160,217);
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#e66465, #9198e5);
+      }
+
+      h3#ante-titulo{
+        width: 80%;
+        padding: 10px;
+        border: 3px solid rgb(180,160,217);
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#ccffcc,#9198e5);
+      }
+
+      h2#titulo{
+        width: 50%;
+        padding: 10px;
+        border: 3px solid rgb(180,160,217);
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#ccffcc,#9198e5);
+      }
+
+      h4#parrafo-llamado{
+        width: 60%;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#ccffcc,#9198e5);
+      }
+
+      div#caja-central{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#e66465, #9198e5);
+        border: 3px solid rgb(180,160,217);
+      }
+
+      main{
+        padding: 10px;
+      }
+
+      div#caja-central{
+        display: inline-block;
+        padding: 10px;
+        margin: 10px; 
+      }
+
+      div#demo{
+        padding: 10px;
+        border-radius: 12px;
+        background: linear-gradient(to left,#e66465, #9198e5);
+      }
+
+      h2#main-titulo{
+        text-align: center;
+        padding: 10%;
+        border: 5px solid rgb(180,160,217);
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#ccffcc,#9198e5);
+      }
+
+      h3#ante-titulo{
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+      h2#titulo{
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+      section{
+        border: 1px solid red;
+      }
+
+      div#caja-barra-lateral{
+        display: inline-block;
+        position: relative;
+        width: 25%;
+        bottom: 78px;
+        left: 5px;
+        padding: 10px;
+        border-radius: 12px;
+        border: 3px solid rgb(180,160,217);
+        box-sizing: border-box;
+      }
+ 
+      p#parrafo-select{
+        padding: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        border: 3px solid rgb(180,160,217);
+        border-radius: 12px;
+        background: linear-gradient(to bottom,#ccffcc,#9198e5);
+      }
+
+      select{
+        position: relative;
+        border-radius: 10px;
+      }
+
+      option{
+        text-align: center; 
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        background: #9198e5;
+      }
+
+      div#demo{
+        border: 3px solid rgb(180,160,217);
+      }
+
+      input#genero-mujer{
+
+      }
+
+      input#genero-hombre{
+
+      }
+
+      label{
+        font-weight: bold;
+        font-family: 'Roboto',sans-serif;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="contenedor-cabecera">
+      <header>
+        <hgroup>
+          <h3 id="ante-titulo">¿Qué lugares prefieres visitar?</h3>
+          <h2 id="titulo">Sitios tipos</h2>
+          <h4 id="parrafo-llamado">Dentro de los lugares a elegir</h4>
+        </hgroup>
+      </header>
+    </div>
+
+    <div id="caja-central">
+      <main>
+        <h2 id="main-titulo">Checkbox</h2>
+        <div id="caja-checkbox">
+          <div id="demo">
+            <p id="parrafo-checkbox">
+              <input type="radio" id="genero-mujer" name="genero" checked>
+              <label for="genero-mujer"><span></span>Mujer</label>
+            </p>
+            <p>
+              <input type="radio" id="genero-hombre" name="genero">
+              <label for="genero-hombre"><span></span>Hombre</label>
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="caja-barra-lateral">
+      <aside id="barra-lateral">
+        <p id="parrafo-select">Selecciona un coche</p>
+        <select>
+          <option value="">&nbsp;</option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+      </aside>
+    </div>
+
+  </body>
+</html>

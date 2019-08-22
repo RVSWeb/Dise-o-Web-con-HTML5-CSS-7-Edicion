@@ -1,0 +1,42 @@
+/* 
+    Created on : 13-ago-2019, 11:20:16
+    Author     : RVS
+*/
+
+aside#barra-lateral-selector{
+  position: relative;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+div#selector-lateral{
+  position: relative;
+  left: 25px;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 12px;
+  background-image: linear-gradient(to top, #4f81b3 , #abc8e4);
+}
+
+label{
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px #4f81b3;
+}
+
+select#unittype{
+  display: block;
+  margin: 10px auto;
+}
+
+option{
+  /*fuentes*/
+  font-style: italic;
+  font-weight: lighter;
+  /*texto*/
+  color: #004085;
+  direction: ltr;
+  white-space: normal;
+}

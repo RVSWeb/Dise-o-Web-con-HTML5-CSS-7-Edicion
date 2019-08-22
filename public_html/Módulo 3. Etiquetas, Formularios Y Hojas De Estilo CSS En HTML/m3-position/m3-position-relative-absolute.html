@@ -1,0 +1,72 @@
+<!--Created on 15-ago-2019, 0:05:15-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Usar para CSS internos-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      #parent-relative {
+        position: relative;
+        margin: 10px;
+        width: 300px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        background-color: #99ff99;
+        font-weight: bolder;
+      }
+
+      #child-relative {
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        width: 150px;
+        height: 110px;
+        padding: 5px;
+        box-sizing: border-box;
+        border: 3px solid red;
+        background-color: tomato;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h2>
+      Capa Parent - Relative 
+      <br>
+      hace de pivote 
+      para la capa Child - Absolute
+    </h2>
+
+    <div id="parent-relative">
+      position: Relative;<br>
+      margin: 10px;<br>
+      width: 300px;<br>
+      height: 100px;
+      <div id="child-relative">
+        position: Absolute;
+        top: 20px;<br>
+        left: 250px;<br>
+        width: 100px;<br>
+        height: 100px;
+
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+/* 
+    Created on : 01-ago-2019, 14:21:31
+    Author     : RVS
+*/
+
+header{
+  font-family: "Roboto",sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom,#269abc,#5bc0de);
+}
+
+header#titulo{  
+  width: 55%;
+  margin: 1.0% auto;
+  padding: 10px;
+  font-size: 1.2em;
+  box-sizing: content-box;
+}
+
+h1#subtitulo{
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  box-sizing: content-box;
+}

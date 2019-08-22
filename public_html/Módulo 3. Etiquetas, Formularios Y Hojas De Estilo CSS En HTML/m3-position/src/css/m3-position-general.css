@@ -1,0 +1,80 @@
+/* 
+    Created on : 14-ago-2019, 22:16:53
+    Author     : RVS
+*/
+
+#parent-relative {
+  position: static;
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+#child-relative {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  border: 5px solid red;
+  box-sizing: border-box;
+}
+
+#parrafo-static{
+  font-weight: bold;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#parrafo-relative{
+  font-weight: bold;
+  text-align: center;
+  margin: 0px auto;
+  border: 2px solid aqua;
+}
+
+#parent-relative {
+  position: relative;
+  border: 1px solid blue;
+  width: 300px;
+  height: 100px;
+}
+
+#child-relative {
+  position: absolute;
+  border: 3px solid red;
+  top: 70px;
+  right: 15px;
+}
+
+#parent-relative2 {
+  position: absolute;
+  border: 1px solid blue;
+  width: 300px;
+  height: 100px;
+  top: 750px;
+  right: 15px;
+}
+
+#child-relative2 {
+  position: absolute;
+  border: 3px solid red;
+  top: 70px;
+  right: 15px;
+}
+
+#parent4 {
+  position: fixed;
+  border: 1px solid blue;
+  background-color: rgba(255,200,200,0.5);  
+  width: 300px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#child4 {
+  position: absolute;
+  border: 3px solid red;
+  top: 70px;
+  right: 15px;
+}

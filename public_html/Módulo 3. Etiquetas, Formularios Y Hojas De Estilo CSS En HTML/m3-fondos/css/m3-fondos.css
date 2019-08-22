@@ -1,0 +1,74 @@
+/* 
+    Created on : 13-ago-2019, 14:47:42
+    Author     : RVS
+*/
+
+html , body{
+  height: 100%;
+}
+
+#cabecera-principal{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background: #007bff;
+  box-sizing: border-box;
+}
+
+#contenedor-principal{
+  display: inline;
+}
+
+#lista-padre{
+  display: inline;
+}
+
+#lista-hijo{
+  display: inline;
+}
+
+#capa-principal{
+  position: relative;
+  height: 100%;
+  line-height: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  /*border-radius: 15px;*/
+  background-image: url("../img/logo-hoja.JPG");
+}
+
+
+#parrafo-principal{
+  position: relative;
+  top: 100px;
+  left: 25%;
+  width: 50%;
+  height: 100px;
+  font-family: 'Abril Fatface',sans-serif;
+  font-size: 22px;
+  vertical-align: middle;
+  border: 5px solid #333333;
+  border-radius: 15px;
+  background-image: url("../img/logo-hoja.JPG");
+  background-size: 20%;
+  background-repeat: repeat-x;
+  background-origin: padding-box;
+}
+
+@media screen and (max-width: 576px){
+
+  #parrafo-principal{
+    font-family: 'Abril Fatface',serif;
+    font-size: 25px;
+    line-height: 2.3; 
+    height: 50%;
+    border: 5px solid #333333;
+    border-radius: 15px;
+    background-image: url("../img/logo-hoja.JPG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>CSS Checkbox Demo from CSSCheckbox.com</title>
+    <link rel="stylesheet" href="src/css/m3-barra-navegacion.css" type="text/css">
+    <link rel="stylesheet" href="src/css/m3-cuerpo-checkbox.css" type="text/css">
+    <link rel="stylesheet" href="src/css/m3-cuerpo-checkbox-central.css" type="text/css">
+    <link rel="stylesheet" href="src/css/m3-subscribe.css" type="text/css">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="principal">
+      <section id="seccion1">
+        <h2 id="tituloSeccion1">Checkbox basico</h2>
+
+        <div id="contenedor1">
+          <input type="checkbox" id="opcion1css" name="opcion1"
+                 checked>
+          <label for="opcion1css">Yes</label>
+        </div>
+
+        <div id="contenedor2">
+          <input type="checkbox" id="opcion2css" name="opcion2">
+          <label for="opcion2css">No</label>
+        </div>
+      </section>
+    </main>
+
+    <form id="form-checkbox">
+      <fieldset>
+        <legend>Choose your interests</legend>
+        <div>
+          <input type="checkbox" id="coding" name="interest" value="coding">
+          <label for="coding">Coding</label>
+        </div>
+        <div>
+          <input type="checkbox" id="music" name="interest" value="music">
+          <label for="music">Music</label>
+        </div>
+        <div>
+          <input type="checkbox" id="art" name="interest" value="art">
+          <label for="art">Art</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sports" name="interest" value="sports">
+          <label for="sports">Sports</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cooking" name="interest" value="cooking">
+          <label for="cooking">Cooking</label>
+        </div>
+        <div>
+          <input type="checkbox" id="other" name="interest" value="other">
+          <label for="other">Other</label>
+          <input type="text" id="otherValue" name="other">
+        </div>
+        <div>
+          <button type="submit">Submit form</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <form id="subscribe" method="get" action="#">
+      <div id="contenedor3">
+        <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+        <label for="subscribeNews">Subscribe to newsletter?</label>
+      </div>
+      <div id="contenedor4">
+        <button id="botonSubscribe" type="submit">Subscribe</button>
+      </div>
+    </form>
+
+  </body>
+</html>

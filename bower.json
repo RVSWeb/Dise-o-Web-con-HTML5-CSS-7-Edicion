@@ -1,0 +1,13 @@
+{
+  "name": "Dise_o_Web_con_HTML5___CSS__7.__Edici_n_",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

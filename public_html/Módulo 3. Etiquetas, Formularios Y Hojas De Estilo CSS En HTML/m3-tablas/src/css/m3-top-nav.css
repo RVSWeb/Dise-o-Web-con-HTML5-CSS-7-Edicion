@@ -1,0 +1,54 @@
+/* 
+    Created on : 14-ago-2019, 19:19:32
+    Author     : RVS
+*/
+
+#contenedor-barra-nav{
+  width: 100%;
+  display: inline-block;
+  border: 2px solid white;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: linear-gradient(to top,#82d2cd, #e8f7c2);
+}
+
+nav#top-nav{
+  box-sizing: border-box;
+}
+
+ul{
+  position: relative;
+  display: inline;
+  box-sizing: border-box;
+}
+
+#icono-lateral{
+  position: relative;
+  margin-left: 50px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-image: url("../img/icon-72x72.png");
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+li{
+  display: inline-block;
+  position: relative;
+  float: right;
+  left: 0;
+  margin: 10px;
+  padding: 10px;
+  list-style-type: none;
+  font-family: 'Roboto',sans-serif;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background: linear-gradient(to top,#82d2cd, #e8f7c2);
+
+}
+
+li > a{
+  text-decoration: none;
+}

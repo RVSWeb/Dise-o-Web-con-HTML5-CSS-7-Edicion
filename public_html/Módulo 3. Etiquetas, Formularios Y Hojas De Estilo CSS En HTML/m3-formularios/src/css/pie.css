@@ -1,0 +1,69 @@
+/* 
+    Created on : 01-ago-2019, 14:21:31
+    Author     : RVS
+*/
+
+footer{
+  position: relative;
+  top: 400px;
+  width: 100%;
+  height: 50%; 
+  margin-bottom: 0.1%;
+  border: 1px solid white;
+  background: linear-gradient(to top,#003b4d,#5bc0de);
+  font-family: "Roboto",sans-serif;
+  box-sizing: border-box;
+  text-align: center; 
+  padding: 3%;
+}
+
+nav {
+  display: inline-block;
+  /*El borde se ajusta al interior del elemento padre*/
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+
+}
+
+nav#izq , nav#der{
+  margin: 10px 5%;
+  padding: 0.2%;
+}
+
+div{
+  display: inline-block;
+  width: 100%;
+}
+
+div#capaizq{
+  border-radius: 12px;
+  background-color: rgba(7, 49, 62,0.2);
+}
+
+div#capader{
+  border-radius: 12px;
+  background-color: rgba(7, 49, 62,0.2);
+}
+
+ul{
+  /*box-sizing: border-box;*/
+  display: inline-block;
+  padding: 0px 15px;
+
+}
+
+li{
+  display: inline-block;
+  margin: 20px 40px;
+  padding: 10px 25px;
+  list-style-type: none;
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.5);
+  box-sizing: border-box;
+  background: linear-gradient(to top,rgba(0, 59, 77,0.5),#5bc0de);
+}
+
+li.list_izq:hover , li.list_der:hover{
+  color: white;
+}

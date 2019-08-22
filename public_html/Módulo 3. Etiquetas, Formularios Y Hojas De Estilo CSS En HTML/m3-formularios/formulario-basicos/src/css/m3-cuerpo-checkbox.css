@@ -1,0 +1,40 @@
+
+main#principal{
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+}
+
+section#seccion1{
+  padding: 10px;
+  text-align: left;
+  border-radius: 6px;
+  background-color: #66ff66;
+}
+
+section#seccion1 > h2#tituloSeccion1{
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #5cb85c;
+}
+
+div#contenedor1 > input#opcion1css{
+  margin: 10px;
+  background: #ccffcc;
+}
+
+div#contenedor1 > label:hover{
+  padding: 10px;
+  background: #ccffcc;
+}
+
+div#contenedor2 > input#opcion2css{
+  margin: 10px;
+  background: #ccffcc;
+}
+ 
+div#contenedor2 > label:hover{
+  padding: 13px;
+  background: #ccffcc;
+}

@@ -1,0 +1,38 @@
+/* 
+    Created on : 14-ago-2019, 21:08:43
+    Author     : RVS
+*/
+
+p{
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  height: 150px;
+  left: 200px;
+  position: relative;
+  top: 50px;
+  width: 150px;
+  text-align: center;
+  background-color: gold;
+  z-index: 2;
+}
+
+p#p1 {
+  vertical-align: 85px;
+  text-align: center;
+  background-color: gold;
+  z-index: 2;
+}
+
+p#p2 {
+  left: 130px;
+  top: -50px;
+  background-color: violet;
+  z-index: 1;
+}
+
+p#p3 {
+  left: 35px;
+  top: -120px;
+  background-color: green;
+  z-index: 3;
+}

@@ -1,0 +1,146 @@
+<!--Created on 27-jul-2019, 19:39:06-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      body{
+        background-image: linear-gradient(to right, #ccffcc, #6adca3);
+      }
+
+      form{
+        position: relative;
+        height: 230px;
+        width: 300px;
+        margin: 40px auto;
+        font-family: 'Roboto',sans-serif;
+        background: white;
+        border-radius: 7px;
+      }
+
+      form > p.p1{
+        position: absolute;
+        left: 25px;
+        width: 80%;
+        height: 50px;
+        text-align: center;
+        background: #ccccff;
+        line-height: 50px; 
+        vertical-align: middle;
+        font-size: 20px;
+        border-radius: 7px;
+      }
+
+      form > select{
+        position: absolute;
+        display: block;
+        top: 60px;
+        width: 120px;
+        margin: 20px;
+        font-family: 'Roboto',sans-serif;
+        background: aliceblue;
+        border-radius: 7px;
+      }
+
+      select#seleccion1{
+        width: 130px;
+        background: wheat;
+        border-radius: 7px;
+      }
+
+      select#seleccion2{
+        width: 130px;
+        height: 100px;
+        background: wheat;
+        border-radius: 7px;
+      }
+
+      input{
+        position: absolute;
+        display: block;
+        top: 180px;
+        left: 160px;
+        padding: 10px;
+        width: 130px;
+        border: none;
+        border-radius: 7px;
+      }
+
+      input.boton1{
+      }
+
+      input.boton2{
+      }
+
+      input:hover{
+        background: #999999;
+        font-size: 120%;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <form id="form1" action="">
+      <p class="p1">Seleccione una divisa</p>
+      <select id="seleccion1">
+        <option label="dolar" value="dolar" selected="selected">$</option>
+        <option label="libra" value="libra"></option>
+        <option label="euro" value="euro"></option>
+        <option label="yen" value="yen"></option>
+        <option label="rublo" value="rulo" disabled="disabled"></option>
+      </select>
+      <input id="boton1" type="submit">
+    </form>
+
+    <form id="form2" action="">
+      <p class="p1">Seleccione una divisa</p>
+      <select id="seleccion2" multiple>
+        <option value="dolar" selected="selected">$</option>
+        <option value="libra">&</option>
+        <option value="euro">€</option>
+        <option value="yen">¥</option>
+        <option value="won" disabled="disabled">₩</option>
+      </select>
+      <input id="boton2" type="submit">
+    </form>
+
+    <br>
+    <br>
+    
+    <footer style="
+            position: fixed;
+            display: block;
+            bottom: 0px;
+            width: 100%;
+            background-color: rgb(189, 195, 199);
+            color: #000;
+            text-align: center;">
+      <aside style="height: 55px;">
+        <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        </a>Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+        <p style="
+           margin-top: 5px;
+           font-size: 20px;
+           font-family: 'Lobster', cursive;
+           ">Powered by RVS</p>
+      </aside>
+    </footer>
+    <!--<script></script>-->
+  </body>
+</html>

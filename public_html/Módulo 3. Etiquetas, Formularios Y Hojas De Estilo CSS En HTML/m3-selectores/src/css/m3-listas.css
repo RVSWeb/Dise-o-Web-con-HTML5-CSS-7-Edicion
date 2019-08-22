@@ -1,0 +1,31 @@
+
+
+div#contenedor-lista{
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 12px;
+  background: linear-gradient(to right, #4f81b3 , #abc8e4);
+}
+
+aside#barra-lateral-lista{
+
+}
+
+p#parrafo-lista{
+  margin: 10px auto;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bolder;
+}
+
+#ul#padre-lista{
+
+}
+
+li.hijo-lista{
+  list-style-image: url("../img/mini-logo-hoja.jpg");
+  list-style-position: inside;
+}

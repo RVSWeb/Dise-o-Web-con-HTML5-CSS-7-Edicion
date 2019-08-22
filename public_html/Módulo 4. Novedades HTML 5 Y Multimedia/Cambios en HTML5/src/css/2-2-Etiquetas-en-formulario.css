@@ -1,0 +1,203 @@
+/* 
+    Created on : 18-ago-2019, 21:32:48
+    Author     : RVS
+*/
+
+main{
+  margin: 10px;
+  max-width: 280px;
+  width: 50%; 
+  padding: 10px;
+  background-image: linear-gradient(to right,#e6ecf0,#e6ecf0) ;
+}
+
+section{
+  padding: 10px;
+  background-image: linear-gradient(to left,#dee1e3,#edeff0) ;
+}
+
+label{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+form{
+  padding: 5px;
+  border-radius: 6px;
+  background-image: linear-gradient(to right,#b9c2c7,#d0d4d6) ;
+}
+
+label[for="formulario-basico"]{
+  max-width: 200px;
+  width: 400px;
+  max-height: 150px;
+  height: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1.4em;
+  text-align: center;
+  background-image: linear-gradient(to top,#b9c2c7,#d0d4d6) ;
+}
+
+label[for="numero"] , 
+[for="buscador"],
+[for="url"],
+[for="telefono"],
+[for="correo"],
+[for="color"]{
+  width: 50%;
+  max-width: 100px;
+  max-height: 150px;
+  height: 50%;
+  text-align: left;
+  background-image: linear-gradient(to right,#899296,#b9c2c7) ;
+}
+
+input{
+  display: block;
+  max-width: 350px;
+  width: 200px;
+  height: 30px;
+  font-size: medium;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 0px solid white;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: 'Roboto',sans-serif;
+}
+
+#input-num{
+  padding-left: 5px;
+  width: 75px;
+}
+
+#input-search{
+  padding-left: 5px;
+}
+
+#input-email{
+  padding-left: 5px;
+}
+
+#input-tel{
+  padding-left: 5px;
+}
+
+#input-url{
+  padding-left: 5px;
+}
+
+#input-color{
+  max-width: 50px;
+  width: 50%;  
+}
+
+[for="rango"]{
+  letter-spacing: 3px;
+  margin-left: 0px;
+  border: 1px solid white;
+  width: 220px;
+  text-align: left;
+}
+
+#input-rango{
+  width: 210px;
+  margin: 10px;
+}
+
+[for="calendario"]{
+  background-image: linear-gradient(to right,#899296,#b9c2c7) ;
+  width: 190px;
+  text-align: center;
+}
+
+#input-fecha{
+  width: 210px;
+  margin: 10px;
+  text-align: center;
+}
+
+#input-submit{
+  margin: 10px;
+  max-width: 100px;
+  width: 50%;
+  max-height: 150px;
+  font-family: 'Roboto',sans-serif;
+  border-radius: 0px;
+  border: 1px solid white;
+  background-image: linear-gradient(to right,#899296,#b9c2c7) ;
+}
+
+@media screen and (max-width : 350px){
+
+  main{
+    width: 280px;
+  }
+
+  label{
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  label[for="formulario-basico"]{
+    max-width: 220px;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  label[for="numero"] , 
+  [for="url"],
+  [for="telefono"],
+  [for="correo"],
+  [for="color"]{
+    max-width: 60px;
+    width: 50%;
+    max-height: 150px;
+    height: 50%;
+    text-align: left;
+    background-image: linear-gradient(to right,#899296,#b9c2c7) ;
+  }
+
+  label[for="buscador"]{
+    max-width: 65px;
+  }
+
+  input{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: green;
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 180px;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  #input-num{
+    width: 75px;
+  }
+
+  #input-color{
+    width: 50px;
+  }
+
+  #input-rango{
+    width: 200px;
+  }
+
+  #input-submit{
+    height: 30px;
+    border: 0px solid white;
+    border-radius: 1px;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+}
+
+
+

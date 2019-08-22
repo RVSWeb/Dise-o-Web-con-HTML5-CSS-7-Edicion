@@ -1,0 +1,14 @@
+/* 
+    Created on : 09-ago-2019, 19:27:03
+    Author     : RVS
+*/
+
+.row{
+  display: flex; 
+}
+
+/*Crear 2 equivalentes columnas flotantes siguiendo cada orden */
+.column{
+  flex: 50%;
+  padding: 10px;
+}

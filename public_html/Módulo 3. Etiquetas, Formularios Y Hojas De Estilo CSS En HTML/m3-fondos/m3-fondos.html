@@ -1,0 +1,71 @@
+<!--Created on 13-ago-2019, 14:46:48-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <!-- Metadatos basicos - Seccion Tecnica  -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="fondos">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Theme-Color" content="#121010">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">  
+    <!-- Archivo configuración de los recursos del HTML para el manifiesto -->
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/logo-hoja.JPG">
+    <!--<link rel="mask-icon" href="">-->
+    <!--<link rel="shortcut icon" href="" />-->
+    <!--<link rel="apple-touch-icon" sizes="192x192" href="">-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="css/m3-top-nav.css">
+    <link rel="stylesheet" href="css/m3-fondos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="cabecera-principal">
+      <nav id="contenedor-principal">
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="capa-principal">
+      <main id="contenedor-principal">
+        <p id="parrafo-principal">
+          Pon un arbol en tu vida
+        </p>
+      </main>
+    </div>
+
+    <script>
+      /**
+       * 
+       * @return {undefined}
+       */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

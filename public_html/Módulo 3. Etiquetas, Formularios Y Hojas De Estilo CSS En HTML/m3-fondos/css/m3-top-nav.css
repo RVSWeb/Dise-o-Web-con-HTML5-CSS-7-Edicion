@@ -1,0 +1,80 @@
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topnav{
+  /*El contenido es recortado y no se muestran barras de posición.*/
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  padding: 14px 16px;
+  color: #f2f2f2;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a:hover{
+  color: black;
+  background-color: #ddd;
+  text-decoration: none;
+}
+
+/*Selecciona un enlace automaticamente*/
+.topnav a.active{
+  color: white;
+  background-color: #4CAF50;
+}
+
+/*Icono de menu de hamburguesa que se despliega cuando se reduce el tamaño de la pantalla */
+.topnav .icon{
+  display: none;
+}
+
+/*Responsive - Si junto and con parentesis() no aparece el menu hamburguesa */
+@media screen and (max-width: 600px){
+
+  /* Oculta todos los enlaces a la pagina para que aparezca el menu hamburguesa
+  - Seleccionamos el primer elemento hijo de los enlaces y oculta a partir del 2º elemento adelante*/ 
+  .topnav a:not(:first-child){
+    display: none;
+  }
+
+  /*Personalizar el menu de hamburguesa*/  
+  .topnav a.icon{
+    float: right;
+    display: block;
+  }
+}
+
+/*Responsive - Si junto and con parentesis() no aparece el menu hamburguesa */
+@media screen and (max-width: 600px){
+
+  /* Posiciona el topnav de forma relative 
+  Mantiene el espacio aunque se nueva pero este no se mueve */
+  .topnav.responsive {
+    /*Posiciona el elemento en la parte superior derecha dejando el hueco*/
+    position: relative;
+  }
+
+  /*Organiza y estructura el menu expandido*/
+  .topnav.responsive .icon{
+    /*Posiciona el elemento en la parte superior derecha sin dejar el hueco*/
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /*Elementos que aparece desplegados al expandir el menu hamburguesa*/
+  .topnav.responsive a{
+    /*Este float expande los enlaces hacia abajo */
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}

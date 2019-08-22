@@ -1,0 +1,24 @@
+/* 
+    Created on : 14-ago-2019, 22:03:22
+    Author     : RVS
+*/
+
+span{
+  background: #c6be96;
+}
+
+h1{
+  background-color: #9996c6;
+}
+
+h2.pos_left {
+  position: relative;
+  left: -30px;
+  background-color: #9bffa4;
+}
+
+h2.pos_right {
+  position: relative;
+  left: 50px;
+  background-color: violet;
+}

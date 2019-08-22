@@ -1,0 +1,76 @@
+<!--Created on 14-ago-2019, 22:16:13-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>m3 Position General</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="m3 Position General">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/css/m3-position-general.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  </head>
+  <body>
+
+    <h1>The position property</h1>
+
+    <h2>position: static;</h2>
+    <p>The Parent1 element has position: static, and will remain in the natural flow of the page.
+      <br>
+      <b>It will NOT act as anchor point for the absolutely positioned Child1 element:</b></p>
+
+    <div id="parent-relative">Parent1: position: static.
+      <div id="child-relative">Child1: position: absolute, right: 15px, top: 70px
+        <br><span id="parrafo-static">No usa de anclaje position:static</span>
+      </div>
+    </div>
+
+    <h2>position: relative;</h2>
+    <p>The Parent2 element has position: <b>relative</b>, and will remain in the natural flow of the page.
+      <br>
+      <b>It will also act as anchor point for the absolutely positioned Child2 element:</b>
+      <br>
+      <span id="parrafo-relative">
+        Aunque se desplace el elemento relative sigue manteniendo 
+        el espacio el cual no puede ser ocupado</span>
+    </p>
+
+    <div id="parent-relative">Parent2: position: <b>relative</b>.
+      <div id="child-relative">Child2: position: <b>absolute</b>, right: 15px, top: 70px</div>
+    </div>
+
+    <h2>position: absolute;</h2>
+
+    <p>The Parent3 element has position: absolute, and will NOT remain in the natural flow of the page.
+      <b>
+        <br>
+        It will position itself according to the closest positioned ancestor.
+        <br>
+        It will also act as anchor point for the absolutely positioned Child3 element:
+      </b>
+    </p>
+
+    <div id="parent-relative2">Parent3: position: absolute, top: 750px, right: 15px.
+      <div id="child-relative2">Child3: position: <b>absolute</b>, right: 15px, top: 70px</div>
+    </div>
+
+    <h2>position: fixed;</h2>
+    <p>The Parent4 element has position: <b>fixed</b>, and will NOT remain in the natural flow of the page.
+      <b>
+        <br>
+        It will position itself according to the viewport.
+        <br>
+        It will also act as anchor point for the absolutely positioned Child4 element:</p>
+      </b>
+
+    <div id="parent4">Parent4: position: <b>fixed</b>, bottom: 0, left: 0, right: 0.
+      <div id="child4">Child4: position: <b>absolute</b>, right: 15px, top: 70px</div>
+    </div>
+
+  </body>
+</html>
