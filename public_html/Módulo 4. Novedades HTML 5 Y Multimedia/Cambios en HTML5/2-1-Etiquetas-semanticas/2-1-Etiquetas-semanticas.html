@@ -3,26 +3,28 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>titulo</title>
+    <title>2.1.Etiquetas-semanticas</title>
     <meta charset="UTF-8">
     <!-- Metadatos basicos  -->
     <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
-    <meta name="description" content="...">
+    <meta name="description" content="2-1-Etiquetas-semanticas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap">  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-topnav.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-social-bar.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <script src="../src/js/2-1-Etiquetas-semanticas-topnav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
@@ -30,16 +32,16 @@
   <body>
 
     <header>
-      <h1 class="header-h1-titulo">My Website.</h1>
-      <p class="header-h1-subtitulo">A website created by me.</p>
+      <h1 class="header-h1-titulo">Mi Website</h1>
+      <p class="header-h1-subtitulo">Un Website creado por mi.</p>
     </header>
 
     <nav>
       <div class="topnav" id="myTopnav">
         <a href="#" class="active">Home</a>
-        <a href="#">Contents</a>
-        <a href="#">Examples</a>
-        <a href="#">About us</a>
+        <a href="#">Contenidos</a>
+        <a href="#">Ejemplos</a>
+        <a href="#">Sobre mi</a>
         <a href="#" class="icon" onclick="menuDesplegable()">
           <i class="fa fa-bars"></i>
         </a>
@@ -47,37 +49,38 @@
     </nav>
 
     <aside class="icon-bar">
-      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.facebook.com/profile.php?id=100009973175258" class="facebook"><i class="fa fa-facebook"></i></a> 
       <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-      <a href="#" class="google"><i class="fa fa-google"></i></a> 
-      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+      <a href="https://www.linkedin.com/in/raul-vela/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
     </aside>
 
 
     <aside class="row">
       <div class="side">
-        <h2 class="h2-aside-titulo">About Me</h2>
-        <h5 class="h5-aside-subtitulo">Photo of me:</h5>
-        <img class="fake-img-200px" src="../src/img/fondo-200px.jpg"></img>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3>More Text</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <img class="fake-img-60px" src="../src/img/fondo-60px.jpg"></img>
-        <img class="fake-img-60px" src="../src/img/fondo-60px.jpg"></img>
-        <img class="fake-img-60px" src="../src/img/fondo-60px.jpg"></img>
+        <h2 class="h2-aside-titulo">Sobre mi</h2>
+        <h5 class="h5-aside-subtitulo">Mi foto:</h5>
+        <img class="fake-img-200px" src="../src/img/Yin_yang.svg"></img>
+        <p class="aside-p">Programador <br><strong>Front-End & Back-End</strong></p>
+        <h3 id="aside-h3">M&aacute;s cosas</h3>
+        <p class="aside-p">Me considero tambi&eacute;n apasionado del<strong><br>Hardware & Redes </strong></p>
+        <img class="fake-img-60px" src="../src/img/ariete-90x60.jpg"></img>
+        <img class="fake-img-60px" src="../src/img/red-60x60.jpg"></img>
+        <img class="fake-img-60px" src="../src/img/wireles-60x65.jpg"></img>
       </div>
 
       <main>
         <hgroup>
-          <h2 class="h2-main-titulo">HEADING Title</h2>
+          <h2 class="h2-main-titulo">Aprendiendo <br> Programando <br> <span id="main-span-palabra">viceversa</span></h2>
           <h5 class="h5-main-subtitulo" onload="verFecha()"></h5>
         </hgroup>
 
         <img class="fake-img"></img>
-        <p class="main-texto">Some text...</p>
+        <p class="main-texto">La era de la tecnología</p>
         <p class="main-texto-principal">
-          Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          Esa era ya ha pasado a mejor vida , ahora estamos en la antesala de 
+          todo lo que veiamos en las películas de rasgos futuristicos <br>
+          ¿ Revoluci&oacute;n d&iacute;gital ? <br><b>Eso es agua pasada.</b>
         </p>
       </main>
     </aside>
@@ -91,9 +94,9 @@
             <h5>Principal</h5>
             <ul class="list-unstyled quick-links">
               <li><a href="javascript:void();"><i class="fa fa-home"> Home</i></a>
-              <li><a href="javascript:void();"><i class="fa fa-book"> Contents</i></a>
-              <li><a href="javascript:void();"><i class="fa fa-file"> Examples</i></a>
-              <li><a href="javascript:void();"><i class="fa fa-smile-o"> About us</i></a>
+              <li><a href="javascript:void();"><i class="fa fa-book"> Contenidos</i></a>
+              <li><a href="javascript:void();"><i class="fa fa-file"> Ejemplos</i></a>
+              <li><a href="javascript:void();"><i class="fa fa-smile-o"> Sobre mi</i></a>
             </ul>
           </div>
 
@@ -101,7 +104,7 @@
             <h5>Enterprise</h5>
             <ul class="list-unstyled quick-links">
               <li><a href="#"><i class="fa fa-star"> FAQ</i></a>
-              <li><a href="#"><i class="fa fa-pencil-square"> License</i></a>
+              <li><a href="#"><i class="fa fa-pencil-square"> Licencia</i></a>
               <li><a href="#"><i class="fa fa-sitemap"> Sitemaps</i></a>
               <li><a href="#"><i class="fa fa-flag"> Site Privacy policy</i></a>
             </ul>

@@ -82,7 +82,21 @@ div.side {
 }
 
 .h5-aside-subtitulo{
+  text-align: center;
   padding: 5px;
+}
+
+.aside-p{
+  text-align: center;
+}
+
+#aside-h3{
+  text-align: center;
+}
+
+span#main-span-palabra{
+  font-size: 0.8em;
+  font-family: 'Indie Flower',sans-serif;
 }
 
 img{
