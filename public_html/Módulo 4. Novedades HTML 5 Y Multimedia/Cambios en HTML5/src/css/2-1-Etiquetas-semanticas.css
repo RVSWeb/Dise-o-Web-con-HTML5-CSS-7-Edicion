@@ -11,7 +11,7 @@ body{
 
 /* Header/logo Title */
 header{
-  padding: 80px;
+  padding:  80px;
   text-align: center;
   color: white;
   background-image: linear-gradient(to bottom,#007b5e,gray);
@@ -122,7 +122,6 @@ img{
   background-color: #aaa;
 }
 
-
 /* Main column */
 main {
   flex: 70%;
@@ -223,6 +222,10 @@ img.fake-img-60px {
     background-color: rgba(0,0,0,0.1);
   }
 
+  header{
+    width: 380px;
+  }
+
 
   /* Increase the font size of the heading */
   header h1{
@@ -240,18 +243,21 @@ img.fake-img-60px {
     padding: 10px;
   }
 
+  nav{
+    width: 380px;
+  }
+  
   .nav a {
     float: none;
-    width: 100%;
-  }
-
-  p.main-texto{
-
   }
 
   p.main-texto-principal{
     height: 150px;
   }
 
+  div.side{
+    
+  }
+  
 }
 
