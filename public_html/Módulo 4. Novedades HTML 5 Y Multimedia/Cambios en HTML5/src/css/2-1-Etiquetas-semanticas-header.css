@@ -1,0 +1,71 @@
+/* 
+    Created on : 23-ago-2019, 11:55:46
+    Author     : RVS
+*/
+
+/* Header/logo Title */
+header{
+  padding:  80px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to bottom,#007b5e,gray);
+}
+
+/* Increase the font size of the heading */
+header h1{
+  font-size: 6em;
+  padding: 20px;
+  width: 100%;
+}
+
+header p{
+  margin: 0px auto;
+  padding: 20px;
+  width: 50%;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 700px){
+
+  *{
+    font-family: 'Ubuntu Mono',sans-serif !important;
+  }
+
+  /* Increase the font size of the heading */
+  header h1{
+    font-size: 3em;
+  }
+
+
+  header p{
+    font-size: 1em;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+
+  *{
+    font-family: 'Indie Flower',sans-serif !important;
+  }
+
+  header{
+    width: 380px;
+  }
+
+  /* Increase the font size of the heading */
+  header h1{
+    width: 100% !important;
+    margin: 10px auto !important;
+    padding: 10px;
+    height: 50%;
+    font-size: 3.5em;
+  }
+
+  header p{
+    width: 100%;
+    margin: 10px auto !important;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+}
