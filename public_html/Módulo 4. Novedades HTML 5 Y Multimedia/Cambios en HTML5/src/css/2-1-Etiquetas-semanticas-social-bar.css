@@ -72,3 +72,25 @@ aside.icon-bar a {
   }
 
 }
+
+@media screen and (max-width: 400px){
+
+  aside.icon-bar{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  aside.icon-bar a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+}
