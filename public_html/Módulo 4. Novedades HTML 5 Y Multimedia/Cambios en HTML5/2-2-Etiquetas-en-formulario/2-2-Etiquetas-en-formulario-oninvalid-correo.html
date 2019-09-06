@@ -1,0 +1,161 @@
+<!--Created on 15-ago-2019, 19:09:34-->
+<!-- Ref : 
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_oninvalid2
+https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Validacion_formulario_datos
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>2.2 Etiquetas en formulario</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?id=1tO73S9t6rpK-B4p-81EDY0ov0OZA4xfj"  sizes="36x36">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- generics -->
+    <link rel="icon" href="../src/img/icons/Icon-32.png" sizes="32x32">
+    <link rel="icon" href="../src/img/icons/Icon-57.png" sizes="57x57">
+    <link rel="icon" href="../src/img/icons/Icon-76.png" sizes="76x76">
+    <link rel="icon" href="../src/img/icons/Icon-96.png" sizes="96x96">
+    <link rel="icon" href="../src/img/icons/Icon-128.png" sizes="128x128">
+    <link rel="icon" href="../src/img/icons/Icon-192.png" sizes="192x192">
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href="../src/img/icons/Icon-192.png">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-180.png" sizes="180x180">
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../src/img/icons/Icon-144.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/2-2-Etiquetas-en-formulario.css">
+    <style>
+
+      /* Esto sólo es para hacer que el ejemplo se vea mejor */
+      body {
+        font: 1em sans-serif;
+        padding: 0;
+        margin : 0;
+      }
+
+      form {
+        max-width: 200px;
+      }
+
+      p * {
+        display: block;
+      }
+
+      #enviar{
+        width: 50%;
+        min-width: 100px;
+      }
+
+      input[type=email]{
+        -webkit-appearance: none;
+
+        width: 100%;
+        border: 1px solid #333;
+        margin: 0;
+
+        font-family: inherit;
+        font-size: 90%;
+
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      /* Estos son los estilos para nuestros campos inválidos */
+      input:invalid{
+        border-color: #900;
+        background-color: #FDD;
+      }
+
+      input:focus:invalid {
+        outline: none;
+      }
+
+      /* Estos son los estilos para nuestros mensajes de error */
+      .error {
+        width  : 100%;
+        padding: 0;
+
+        font-size: 80%;
+        color: white;
+        background-color: #900;
+        border-radius: 0 0 5px 5px;
+
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .error.active {
+        padding: 0.3em;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <section>
+        <label for="formulario-basico">
+          Nuevos Elementos de Formulario 
+        </label>
+
+        <!--Atributo 'novalidate' para 'form' y para 'input' -->
+        <form id="formulario-principal" method="get" action="../">
+          <label for="mail">Correo Electronico</label>
+          <input id="mail" 
+                 type="email"  
+                 name="mail"
+                 oninvalid="validar_correo">
+
+          <span class="error" aria-live="polite"></span>
+
+          <input type="submit" id="enviar" name="enviar">
+        </form>
+      </section>
+    </main>
+
+    <script>
+
+      /**
+       * 
+       * @return {undefined}
+       */
+      function validar_correo() {
+
+        var form = document.getElementsByTagName('form')[0];
+        var email = document.getElementById('mail');
+        var error = document.querySelector('.error');
+
+        email.addEventListener('keyup', function (event) {
+//        validity = objeto API Validate que describe el estado de validación del elemento.
+          if (email.validity.valid) {
+            error.innerHTML = "";
+            error.className = "error";
+          }
+        }, false);
+
+        form.addEventListener('submit', function (event) {
+          if (!email.validity.valid) {
+            error.innerHTML = "Esperando una direccion de correo";
+            error.className = "Error active";
+            event.preventDefault();
+          }
+        }, false);
+      }
+
+    </script>
+  </body>
+</html>

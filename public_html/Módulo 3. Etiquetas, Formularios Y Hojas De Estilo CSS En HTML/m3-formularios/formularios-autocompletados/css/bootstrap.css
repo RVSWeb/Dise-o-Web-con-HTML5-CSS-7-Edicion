@@ -4013,13 +4013,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle:focus {
   outline: 0;
 }
-.navbar-toggle .icon-bar {
+.navbar-toggle .aside--icon-bar {
   display: block;
   width: 22px;
   height: 2px;
   border-radius: 1px;
 }
-.navbar-toggle .icon-bar + .icon-bar {
+.navbar-toggle .aside--icon-bar + .aside--icon-bar {
   margin-top: 4px;
 }
 @media (min-width: 768px) {
@@ -4238,7 +4238,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .aside--icon-bar {
   background-color: #888;
 }
 .navbar-default .navbar-collapse,
@@ -4334,7 +4334,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-toggle:focus {
   background-color: #333;
 }
-.navbar-inverse .navbar-toggle .icon-bar {
+.navbar-inverse .navbar-toggle .aside--icon-bar {
   background-color: #fff;
 }
 .navbar-inverse .navbar-collapse,

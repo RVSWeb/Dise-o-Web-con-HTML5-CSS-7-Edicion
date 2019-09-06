@@ -3,60 +3,114 @@
     Author     : RVS
 */
 
-/* Header/logo Title */
+/**
+*
+* 2-1-Etiquetas-semanticas-header.css
+*
+* Cabecera basica con los titulos y subtitulos con colores verdes claros , 
+* degradados s con letras blancas con las fuentes 'Roboto' 
+*
+*/
+
 header{
-  padding:  80px;
+  width: 100%;
+  height: 450px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+.header--outstanding{
   text-align: center;
   color: white;
   background-image: linear-gradient(to bottom,#007b5e,gray);
 }
 
 /* Increase the font size of the heading */
-header h1{
-  font-size: 6em;
-  padding: 20px;
-  width: 100%;
+.header__h1{
+  width: 70%;
+  max-height: 50%;
+  margin: 0 auto;
+  padding-top: 6%;
 }
 
-header p{
-  margin: 0px auto;
-  padding: 20px;
-  width: 50%;
-  font-size: 2em;
+.header__h1.h1--title-big{
+  font-size: 9em;
+  font-family: 'Indie Flower',sans-serif;
 }
 
-@media screen and (max-width: 700px){
+.header__subtitle{
+  width: 55%;
+  max-height: 50%;
+  margin: 0% auto;
+  padding-top: 3%;
+}
+
+.header__subtitle.subtitle__med{
+  font-size: 3em;
+  font-family: 'Indie Flower',sans-serif;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
   *{
-    font-family: 'Ubuntu Mono',sans-serif !important;
+    box-sizing: border-box;
+  }
+
+  header{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
   }
 
   /* Increase the font size of the heading */
-  header h1{
-    font-size: 3em;
+  .header__h1{
+    width: 100%;
+    margin: 0 auto;
   }
 
+  .header__h1.h1--title-big{
+    font-size: 5em;
+  }
+
+  .header__subtitle{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header__subtitle.subtitle__med{
+    font-size: 2.0em;
+  }
+
+}
+/*
+@media screen and (max-width: 988px){
+
+   Increase the font size of the heading 
+  .header__h1{
+    max-width: 50%;
+    max-height: 50%;
+    margin: 0 auto;
+    padding-top: 120px;
+    font-size: 6em;
+  }
 
   header p{
+    margin: 0 auto;
     font-size: 1em;
   }
 }
 
-
 @media screen and (max-width: 400px){
 
-  *{
-    font-family: 'Indie Flower',sans-serif !important;
-  }
-
   header{
-    width: 320px;
+    width: 399px;
   }
 
-  /* Increase the font size of the heading */
+   Increase the font size of the heading 
   header h1{
-    width: 100% !important;
-    margin: 10px auto !important;
+    width: 100%;
+    margin: 0px auto;
     padding: 10px;
     height: 50%;
     font-size: 3.5em;
@@ -64,8 +118,8 @@ header p{
 
   header p{
     width: 100%;
-    margin: 10px auto !important;
+    margin: 0px auto;
     font-size: 1.5em;
     padding: 10px;
   }
-}
+}*/

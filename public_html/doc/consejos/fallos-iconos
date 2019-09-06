@@ -1,0 +1,5 @@
+Si los iconos aparecen en □ es por culpa de la tipografia de CSS
+
+*{
+  font-family : 'Roboto', sans-seferif;
+}

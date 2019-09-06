@@ -3,23 +3,45 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>2.1.Etiquetas-semanticas</title>
+    <title>Etiquetas Semanticas</title>
     <meta charset="UTF-8">
     <!-- Metadatos basicos  -->
     <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
-    <meta name="description" content="2-1-Etiquetas-semanticas">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Etiquetas Semanticas">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="theme-color" content="#4285f4">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="../src/img/favicon.ico">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
 
+    <!-- generics -->
+    <link rel="icon" href="../src/img/icons/Icon-32.png" sizes="32x32">
+    <link rel="icon" href="../src/img/icons/Icon-57.png" sizes="57x57">
+    <link rel="icon" href="../src/img/icons/Icon-76.png" sizes="76x76">
+    <link rel="icon" href="../src/img/icons/Icon-96.png" sizes="96x96">
+    <link rel="icon" href="../src/img/icons/Icon-128.png" sizes="128x128">
+    <link rel="icon" href="../src/img/icons/Icon-192.png" sizes="192x192">
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href="../src/img/icons/Icon-192.png">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-180.png" sizes="180x180">
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../src/img/icons/Icon-144.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?id=1tO73S9t6rpK-B4p-81EDY0ov0OZA4xfj"  sizes="36x36">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap">  
 
-    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-header.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-nav.css">
+    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-header.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-topnav.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas.css">
+    <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-aside-bar.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-social-bar.css">
     <link rel="stylesheet" href="../src/css/2-1-Etiquetas-semanticas-footer.css">
 
@@ -33,11 +55,6 @@
 
   <body>
 
-    <header>
-      <h1 class="header-h1-titulo">Mi Website</h1>
-      <p class="header-h1-subtitulo">Un Website creado por mi.</p>
-    </header>
-
     <nav>
       <div class="topnav" id="myTopnav">
         <a href="#" class="active">Home</a>
@@ -50,7 +67,12 @@
       </div>
     </nav>
 
-    <aside class="icon-bar">
+    <header class="header--outstanding">
+      <h1 class="header__h1 h1--title-big">Mi Website</h1>
+      <p class="header__subtitle subtitle__med">Un Website creado por mi.</p>
+    </header>
+
+    <aside class="aside--icon-bar">
       <a href="https://www.facebook.com/profile.php?id=100009973175258" class="facebook">
         <i class="fa fa-facebook"></i></a> 
       <a href="#" class="twitter">
@@ -61,15 +83,14 @@
         <i class="fa fa-youtube"></i></a> 
     </aside>
 
-
     <aside class="row">
       <div class="side">
-        <h2 class="h2-aside-titulo">Sobre mi</h2>
-        <h5 class="h5-aside-subtitulo">Mi foto:</h5>
-        <img class="fake-img-200px" src="../src/img/Yin_yang.svg"></img>
-        <p class="aside-p">Programador <br><strong>Front-End & Back-End</strong></p>
-        <h3 id="aside-h3">M&aacute;s cosas</h3>
-        <p class="aside-p">Me considero tambi&eacute;n apasionado del<strong><br>Hardware & Redes </strong></p>
+        <h2 class="bar-side__titulo bar-lateral--big-text">Sobre mi</h2>
+        <h5 class="h5-aside--subtitle aside-subtitle--photo">Mi foto:</h5>
+        <img class="fake-img--200px" src="../src/img/Yin_yang.svg"></img>
+        <p class="aside__text-details">Programador <br><strong>Front-End & Back-End</strong></p>
+        <h3 id="aside__more-things">M&aacute;s cosas</h3>
+        <p class="aside__text-details aside__text--showy">Me considero tambi&eacute;n apasionado del<strong><br>Hardware & Redes </strong></p>
         <img class="fake-img-60px" src="../src/img/ariete-90x60.jpg"></img>
         <img class="fake-img-60px" src="../src/img/red-60x60.jpg"></img>
         <img class="fake-img-60px" src="../src/img/wireles-60x65.jpg"></img>
@@ -77,14 +98,14 @@
 
       <main>
         <hgroup>
-          <h2 class="h2-main-titulo">Aprendiendo <br> Programando <br> 
-            <span id="main-span-palabra">viceversa</span></h2>
-          <h5 class="h5-main-subtitulo" onload="verFecha()"></h5>
+          <h2 class="h2__main-titulo">Aprendiendo <br> Programando <br> 
+            <span id="main__span-palabras">viceversa</span></h2>
+          <h5 class="h5__main-subtitulo" onload="verFecha()"></h5>
         </hgroup>
 
         <img class="fake-img" src="../src/img/digitale-welt.jpg"></img>
         <p class="main-texto">La era de la tecnología</p>
-        <p class="main-texto-principal">
+        <p class="main--texto-principal">
           Esa era ya ha pasado a mejor vida , ahora estamos en la antesala de 
           todo lo que veiamos en las películas de rasgos futuristicos <br>
           ¿ Revoluci&oacute;n d&iacute;gital ? <br><b>Eso es agua pasada.</b>

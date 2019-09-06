@@ -49,12 +49,10 @@ label[for="numero"] ,
 [for="telefono"],
 [for="correo"],
 [for="color"]{
-  width: 50%;
   max-width: 100px;
   max-height: 150px;
   height: 50%;
   text-align: left;
-  background-image: linear-gradient(to right,#899296,#b9c2c7) ;
 }
 
 input{
@@ -152,6 +150,7 @@ input{
 
   label[for="numero"] , 
   [for="url"],
+  [for="buscador"],
   [for="telefono"],
   [for="correo"],
   [for="color"]{
@@ -196,8 +195,72 @@ input{
     border-radius: 1px;
     font-family: 'Indie Flower',sans-serif;
   }
-
 }
 
+@media screen and (min-width : 260px) and (max-width: 319px){
+
+  label{
+    background-color: pink;
+  }
+
+  main{
+    width: 280px;
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width: 349px){
+
+  label{
+    background-color: green;
+  }
+
+  main{
+    width: 320px;
+  }
+}
+
+@media screen and (min-width : 350px) and (max-width: 374px){
+
+  label{
+    background-color: red;
+  }
+
+  main{
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px){
+
+  label{
+    background-color: yellow;
+  }
+
+  main{
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px){
+
+  label{
+    background-color: blue;
+  }
+
+  main{
+    width: 780px;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  label{
+    background-color: aqua;
+  }
+
+  main{
+    width: 100%;
+  }
+}
 
 

@@ -1,0 +1,109 @@
+<!--Created on 15-ago-2019, 19:09:34-->
+<!-- Ref : 
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_oninvalid2
+https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Validacion_formulario_datos
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>2.2 Etiquetas en formulario</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" 
+          href="https://drive.google.com/uc?id=1tO73S9t6rpK-B4p-81EDY0ov0OZA4xfj" sizes="36x36">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- generics -->
+    <link rel="icon" href="../src/img/icons/Icon-32.png" sizes="32x32">
+    <link rel="icon" href="../src/img/icons/Icon-57.png" sizes="57x57">
+    <link rel="icon" href="../src/img/icons/Icon-76.png" sizes="76x76">
+    <link rel="icon" href="../src/img/icons/Icon-96.png" sizes="96x96">
+    <link rel="icon" href="../src/img/icons/Icon-128.png" sizes="128x128">
+    <link rel="icon" href="../src/img/icons/Icon-192.png" sizes="192x192">
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href="../src/img/icons/Icon-192.png">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../src/img/icons/Icon-180.png" sizes="180x180">
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../src/img/icons/Icon-144.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
+    <link rel="stylesheet" type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" 
+          href="../src/css/2-2-Etiquetas-en-formulario.css">
+    <style>
+
+      label{
+        padding: 10px;
+        margin: 0;
+      }
+
+      #codigo-postal{
+        text-indent: 10px;
+      }
+
+      #enviar{
+        width: 100px;
+        min-width: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <section>
+        <label for="formulario-basico">
+          Nuevos Elementos de Formulario 
+        </label>
+
+        <!--Atributo 'novalidate' para 'form' y para 'input' -->
+        <form id="formulario-principal" method="get" action="../">
+          <label for="calle">Calle</label>
+          <input id="calle"  
+                 type="text" 
+                 name="street" 
+                 title="calle no aceptada" 
+                 oninvalid="mi_funcion" 
+                 required>
+
+          <label for="numero">Numero</label>
+          <input id="numero"
+                 type="text" 
+                 name="number" 
+                 oninvalid="alert('contener 3 caracteres');" 
+                 pattern=".{1,3}">
+
+          <label for="codigo-postal">Codigo Postal</label>
+          <input id="codigo-postal" 
+                 type="text" 
+                 name="country-code" 
+                 pattern=".{1,6}" 
+                 title="Por favor, Introduce 3 caracteres">
+
+          <input type="submit" id="enviar" name="enviar">
+        </form>
+      </section>
+    </main>
+
+    <script>
+
+      document.getElementById('calle').addEventListener('invalid', mi_funcion);
+
+      function mi_funcion() {
+        alert('Calle no aceptada');
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,21 +1,4 @@
 
-*{
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body{
-  margin: 0;
-}
-
-/* Column container */
-.row{
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;  
-}
-
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 div.side {
@@ -42,11 +25,17 @@ div.side {
 }
 
 .aside__text-details{
+
+}
+
+.aside__text-details.aside__text--showy{
   text-align: center;
+  background-color: #aaa;
 }
 
 #aside__more-things{
   text-align: center;
+  background-color: red;
 }
 
 span#main__span-palabras{
@@ -141,6 +130,15 @@ p.main--texto-principal{
 
   aside{
     font-family: 'Indie Flower' , sans-serif;
+  }
+
+  .aside__text-details{
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .aside__text-details.aside__text--showy{
+
   }
 
   .fake-img{
