@@ -5,11 +5,11 @@
 
 
 function menuDesplegable() {
-  var x = document.getElementById('myTopnav');
+  var x = document.getElementById('my-top-nav-responsive');
   
-  if (x.className === 'topnav') {
+  if (x.className === 'top-nav') {
     x.className += ' responsive';
   } else {
-    x.className = 'topnav';
+    x.className = 'top-nav';
   }
 }

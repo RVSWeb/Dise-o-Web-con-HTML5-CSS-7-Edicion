@@ -8,12 +8,12 @@ body {
   box-sizing: border-box;
 }
 
-.topnav{
+.top-nav{
   overflow: hidden;
   background-color: #333;
 }
 
-.topnav a{
+.top-nav a{
   float: left;
   display: block;
   color: #f2f2f2;
@@ -23,32 +23,32 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover{
+.top-nav a:hover{
   color: black;
   text-decoration: none;
   background-color: #ddd;
 }
 
-.topnav a.active{
+.top-nav a.active{
   color: white;
   background-color: #007b5e;
 }
 
-.topnav .icon {
+.top-nav .icon-menu {
   display: none;
 }
 
 @media screen and (max-width: 600px){
 
-  .topnav{
+  .top-nav{
     box-sizing: border-box;
   }
 
-  .topnav a:not(:first-child){
+  .top-nav a:not(:first-child){
     display: none;
   }
 
-  .topnav a.icon{
+  .top-nav a.icon-menu{
     float: right;
     display: block;
   }
@@ -56,17 +56,17 @@ body {
 
 @media screen and (max-width: 600px){
 
-  .topnav.responsive{
+  .top-nav.responsive{
     position: relative;
   }
 
-  .topnav.responsive .icon{
+  .top-nav.responsive .icon-menu{
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .topnav.responsive a{
+  .top-nav.responsive a{
     float: none;
     display: block;
     text-align: left;
@@ -75,17 +75,17 @@ body {
 
 @media screen and (max-width: 400px){
 
-  .topnav.responsive{
+  .top-nav.responsive{
     position: relative;
   }
 
-  .topnav.responsive .icon{
+  .top-nav.responsive .icon-menu{
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .topnav.responsive a{
+  .top-nav.responsive a{
     float: none;
     display: block;
     text-align: left;

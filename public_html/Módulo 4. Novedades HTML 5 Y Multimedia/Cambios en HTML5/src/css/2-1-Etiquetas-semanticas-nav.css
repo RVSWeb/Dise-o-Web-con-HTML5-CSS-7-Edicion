@@ -1,8 +1,15 @@
+/**
+*
+* 2-1-Etiquetas-semanticas-nav.css
+*
+* Barra de navegacion con despliegue de elementos
+*
+*/
+
 
 *{
   box-sizing: border-box;
 }
-
 
 /* Style the top navigation bar */
 nav{

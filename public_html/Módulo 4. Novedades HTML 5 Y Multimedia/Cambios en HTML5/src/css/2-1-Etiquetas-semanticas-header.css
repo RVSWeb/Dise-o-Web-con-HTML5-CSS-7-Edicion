@@ -12,11 +12,14 @@
 *
 */
 
+*{
+  box-sizing: border-box;
+}
+
 header{
   width: 100%;
   height: 450px;
   margin: 0px auto;
-  box-sizing: border-box;
 }
 
 .header--outstanding{
@@ -25,101 +28,228 @@ header{
   background-image: linear-gradient(to bottom,#007b5e,gray);
 }
 
-/* Increase the font size of the heading */
-.header__h1{
+.header__title{
   width: 70%;
   max-height: 50%;
   margin: 0 auto;
   padding-top: 6%;
 }
 
-.header__h1.h1--title-big{
+.header__title--big{
   font-size: 9em;
   font-family: 'Indie Flower',sans-serif;
 }
 
 .header__subtitle{
-  width: 55%;
-  max-height: 50%;
+  width: 100%;
+  height: 50%;
   margin: 0% auto;
   padding-top: 3%;
 }
 
-.header__subtitle.subtitle__med{
+.subtitle__med-color{
   font-size: 3em;
   font-family: 'Indie Flower',sans-serif;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-  *{
-    box-sizing: border-box;
-  }
+@media screen and (max-width: 319px) {
 
   header{
-    width: 100%;
-    height: 100%;
+    height: 250px;
     margin: 0px auto;
   }
 
-  /* Increase the font size of the heading */
-  .header__h1{
+  .header__title{
     width: 100%;
     margin: 0 auto;
   }
 
-  .header__h1.h1--title-big{
-    font-size: 5em;
+  .header__title--big{
+    text-align: center;
+    font-size: 3.6em;
   }
 
   .header__subtitle{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    padding-top: 10%;
   }
 
-  .header__subtitle.subtitle__med{
-    font-size: 2.0em;
+  .subtitle__med-color{
+    text-align: center;
+    font-size: 1.9em;
   }
 
 }
-/*
-@media screen and (max-width: 988px){
 
-   Increase the font size of the heading 
-  .header__h1{
-    max-width: 50%;
-    max-height: 50%;
-    margin: 0 auto;
-    padding-top: 120px;
-    font-size: 6em;
-  }
-
-  header p{
-    margin: 0 auto;
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 400px){
+@media screen and (min-width: 320px) and (max-width: 349px) {
 
   header{
-    width: 399px;
+    width: 100%;
+    height: 250px;
+    padding-top: 10%;
   }
 
-   Increase the font size of the heading 
-  header h1{
+  .header__title{
     width: 100%;
-    margin: 0px auto;
-    padding: 10px;
     height: 50%;
-    font-size: 3.5em;
+    margin: 0 auto;
   }
 
-  header p{
-    width: 100%;
-    margin: 0px auto;
-    font-size: 1.5em;
-    padding: 10px;
+  .header__title--big{
+    font-size: 4em;
   }
-}*/
+
+  .header__subtitle{
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  .subtitle__med-color{
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 480px) {
+
+  header{
+    height: 200px;
+  }
+
+  .header__title{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10%;
+  }
+
+  .header__title--big{
+    font-size: 5em;
+  }
+
+  .header__subtitle {
+    padding-top: 8%;
+  }
+
+  .subtitle__med-color{
+    font-size: 1.9em;
+  }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  header{
+    height: 250px;
+  }
+
+  .header__title{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__title--big{
+    font-size: 6.0em;
+    text-align: center;
+  }
+
+  .header__subtitle{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .subtitle__med-color{
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  header{
+    height: 300px;
+  }
+
+  /* Increase the font size of the heading */
+  .header__title{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__title--big{
+    color: white;
+    font-size: 9.5em;
+    text-align: center;
+  }
+
+  .header__subtitle{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .subtitle__med-color{
+    font-size: 3em;
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  header{
+    height: 350px;
+  }
+
+  /* Increase the font size of the heading */
+  .header__title{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__title--big{
+    color: white;
+    font-size: 9em;
+    text-align: center;
+  }
+
+  .header__subtitle{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .subtitle__med-color{
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+
+  header{
+    height: 450px;
+  }
+
+  /* Increase the font size of the heading */
+  .header__title{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+
+  .header__title--big{
+    color: white;
+    font-size: 15em;
+    text-align: center;
+  }
+
+  .header__subtitle{
+    width: 100%;
+    margin: 2% auto;
+  }
+
+  .subtitle__med-color{
+    font-size: 5em;
+  }
+
+}
+
+

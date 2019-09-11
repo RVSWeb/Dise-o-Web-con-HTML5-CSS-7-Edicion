@@ -1,0 +1,651 @@
+/*
+*
+* 2-1-Etiquetas-semanticas-aside-lateral.css
+*
+* Barra lateral que contiene imagenes y texto 
+*
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+aside{
+  font-family: 'Indie Flower' , sans-serif;
+}
+
+.aside__row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row--font-cool{
+  background-color: aqua;
+  font-family: 'Roboto',sans-serif;
+}
+
+/* Create two unequal columns that 
+   sits next to each other */
+/* Sidebar/left column */
+.div__side {
+  flex: 30%;
+  -ms-flex: 30%;
+  padding: 0.5%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.aside__title {
+  width: 20%;
+  max-width: 160px;
+  padding: 0.3%;
+  margin: 0 auto;
+}
+
+.aside-title--big-txt {
+  font-weight: bold;
+  text-align: center;
+  background-color: #aaa;
+}
+
+.aside--subtitle {
+  width: 50%;
+  max-width: 200px;
+  width: 15%;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.aside-subtitle--photo {
+  font-size: 1.9em;
+  text-align: center;
+  background-color: #aaa;
+}
+
+.aside__txt-detail{
+  width: 80%;
+  margin: 1% auto;
+  padding: 0.5%;
+}
+
+.aside__txt-color{
+  font-size: 1.2em;
+  text-align: center;
+  background:#aaa;
+}
+
+.aside__more-things{
+  width: 20%;
+  padding: 1%;
+  margin: 0 auto;
+  background-color: #aaa;
+}
+
+.aside__more--things-cool {
+  text-align: center;
+  background-color: #aaa;
+}
+
+.section__img{
+  width: 100%;
+  background-color: #aaa;
+}
+
+.img--yin{
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 1% auto;
+  border-radius: 15px;
+  background-color: #aaa;  
+}
+
+.aside__img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 1% auto;
+  border: 0 solid #aaa;
+  border-radius: 6px;
+}
+
+/* 
+   Responsive layout - when the screen is less than 320px wide,
+   make the navigation links stack on top of each other instead
+   of next to each other 
+*/
+@media screen and (max-width : 319px){
+
+  .aside__row{
+    border: 5px solid green;
+  }
+
+  .div__side {
+    flex: 30%;
+    -ms-flex: 30%;
+    padding: 0.5%;
+  }
+
+  .aside__title{
+    width: 90%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside-title--big-txt {
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.9em;
+  }
+
+  .aside--subtitle {
+    width: 70%;
+    padding: 2%;
+    margin: 5% auto;
+  }
+
+  .aside-subtitle--photo {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: bold;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .img--yin{
+    display: block;
+    width: 90%;
+    padding: 2%;
+    margin: 5% auto;
+  }
+
+  .aside__more-things {
+    width: 60%;
+    padding: 2%;
+    margin: 5% auto;
+  }
+
+  .aside__more--things-cool {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .aside__txt-detail {
+    width: 90%;
+    margin: 2% auto;
+    padding: 2%;
+  }
+
+  .aside__txt-color{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Ubuntu',sans-serif;
+  }
+
+
+  .span--deco{
+    font-size: 0.9em;
+    font-weight: bold;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .aside__img {
+    width: 95%;
+    height: auto;
+    margin: 5% auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width : 480px){
+
+  .aside__row{
+    border: 5px solid blue;
+  }
+
+  .div__side {
+    flex: 30%;
+    -ms-flex: 30%;
+  }
+
+  .aside__title{
+    width: 70%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside-title--big-txt {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Ubuntu',sans-serif;
+  }
+
+  .aside--subtitle {
+    width: 80%;
+    padding: 5%;
+    margin: 2% auto;
+  }
+
+  .aside-subtitle--photo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.9em;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .img--yin{
+    display: block;
+    width: 90%;
+    padding: 3%;
+    margin: 2% auto;
+  }
+
+  .aside__txt-detail {
+    width: 80%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .span--deco{
+    font-size: 0.9em;
+    font-weight: bold;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .aside__more-things {
+    width: 80%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__more--things-cool {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .aside__txt-detail{
+    width: 90%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__txt-color{
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Ubuntu',sans-serif;
+  }
+
+  .aside__img {
+    width: 90%;
+    height: auto;
+    margin: 5% auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width : 697px){
+
+  .aside__row{
+    border: 5px solid green;
+  }
+
+  .div__side {
+    flex: 30%;
+    -ms-flex: 30%;
+  }
+
+  .aside__title{
+    width: 90%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside-title--big-txt {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Ubuntu',sans-serif;
+  }
+
+  .aside--subtitle {
+    width: 60%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside-subtitle--photo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .img--yin{
+    display: block;
+    width: 80%;
+    padding: 3%;
+    margin: 2% auto;
+  }
+
+  .aside__txt-detail {
+    width: 70%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .span--deco{
+    font-size: 0.9em;
+    font-weight: bold;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .aside__more-things {
+    width: 50%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__more--things-cool {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bolder;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .aside__txt-color{
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Ubuntu',sans-serif;
+  }
+
+  .aside__img {
+    width: 90%;
+    height: auto;
+    margin: 5% auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px;
+  }
+
+}
+
+@media screen and (min-width: 698px) and (max-width : 1024px){
+
+  .aside__row{
+    border: 5px solid blueviolet;
+  }
+
+  .div__side {
+    flex: 30%;
+    -ms-flex: 30%;
+    padding: 0.5%;
+  }
+
+  .aside__title{
+    width: 70%;
+    padding: 4%;
+    margin: 2% auto;
+  }
+
+  .aside-title--big-txt {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .aside--subtitle {
+    width: 60%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside-subtitle--photo {
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: bold;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .img--yin{
+    display: block;
+    width: 95%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__txt-detail {
+    width: 90%;
+    padding: 4%;
+    margin: 2% auto;
+  }
+
+  .aside__txt-color{
+    text-align: center;
+    font-size: 3.0em;
+  }
+
+  .span--deco{
+    font-size: 0.9em;
+    font-weight: bold;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .aside__img {
+    width: 90%;
+    height: auto;
+    margin: 2% auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px;
+  }
+
+  .aside__more-things {
+    width: 80%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__more--things-cool {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .aside__txt-color{
+    font-style: italic;
+    font-size: 1.2em;
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width : 1200px){
+
+  aside{
+    font-family: 'Indie Flower' , sans-serif;
+  }
+
+  .aside__row{
+    border: 5px solid chartreuse;
+  }
+
+  .div__side {
+    flex: 30%;
+    -ms-flex: 30%;
+    padding: 0.5%;
+  }
+
+  .aside__title{
+    width: 60%;
+    padding: 1%;
+    margin: 2% auto;
+  }
+
+  .aside-title--big-txt {
+    font-size: 1.5em;
+  }
+
+  .aside--subtitle {
+    width: 50%;
+    max-width: 200px;
+    padding: 1%;
+    margin: 2% auto;
+  }
+
+  .aside-subtitle--photo {
+    font-size: 2.0em;
+    font-weight: bold;
+    font-family: 'Indie Flower',sans-serif;
+    text-align: center;
+  }
+
+  .img--yin{
+    display: block;
+    width: 30%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__txt-detail {
+    width: 50%;
+    padding: 1%;
+  }
+
+  .aside__txt-color{
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .span--deco{
+    font-size: 0.9em;
+    font-weight: bold;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .aside__more-things {
+    width: 40%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+
+  .aside__more--things-cool {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .aside__img {
+    width: 75%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2% auto;
+    border-radius: 6px;
+  }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width : 1920px){
+
+  .aside__row{
+    border: 5px solid pink;
+  }
+
+  .div__side {
+    flex: 30%;
+    -ms-flex: 30%;
+    padding: 0.5%;
+  }
+
+  .aside__title{
+    width: 60%;
+    padding: 1%;
+    margin: 1% auto;
+  }
+
+  .aside-title--big-txt {
+    font-size: 1.5em;
+  }
+
+  .aside--subtitle {
+    width: 50%;
+    padding: 1%;
+    margin: 1% auto;
+  }
+
+  .aside-subtitle--photo {
+    font-size: 2.0em;
+    font-weight: bold;
+    font-family: 'Indie Flower',sans-serif;
+    text-align: center;
+  }
+
+  .img--yin{
+    display: block;
+    width: 30%;
+    padding: 1%;
+    margin: 1% auto;
+  }
+
+  .aside__txt-detail {
+    padding: 1%;
+    width: 50%;
+  }
+
+  .aside__txt-color{
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .span--deco{
+    font-size: 0.9em;
+    font-weight: bold;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .aside__more-things {
+    width: 30%;
+    padding: 1%;
+    margin: 1% auto;
+  }
+
+  .aside__more--things-cool {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Indie Flower',sans-serif;
+  }
+
+  .aside__img {
+    width: 75%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1% auto;
+    border-radius: 6px;
+  }
+
+}
+
+
+/* 
+   Responsive layout - when the screen is less than 700px wide, 
+   make the two columns stack on top of each other 
+   instead of next to each other 
+*/
+@media screen and (min-width: 321px) and (max-width: 700px){
+
+  .aside__row{
+    flex-direction: column;
+  }
+
+}
+
+
