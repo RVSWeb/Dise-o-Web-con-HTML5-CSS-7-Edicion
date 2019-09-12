@@ -1464,7 +1464,7 @@ hgroup{
 
   .section-title--decorate{
     text-align: center;
-    font-size: 6.0em;
+    font-size: 4.0em;
     border-radius: 12px;
   }
 
@@ -1484,7 +1484,7 @@ hgroup{
 
   .section-subtitle--deco{
     text-align: center;
-    font-size: 5.5em;
+    font-size: 4.5em;
     font-style: italic;
     font-family: 'Orbitron',sans-serif;
     background-color: rgba(0,0,0,0.1);
@@ -1504,20 +1504,19 @@ hgroup{
 
   .txt--deco{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Ubuntu',sans-serif;
   }
 
   .section-txt-second{
     width: 95%;
-    height: auto;
     padding: 2%;
     margin: 2% auto;
   }
 
   .txt-second--deco{
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
     font-family: 'Ubuntu',sans-serif;
   }
 
