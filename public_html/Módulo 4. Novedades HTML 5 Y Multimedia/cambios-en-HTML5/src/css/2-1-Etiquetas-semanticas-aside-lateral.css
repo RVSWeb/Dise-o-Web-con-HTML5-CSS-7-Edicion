@@ -279,19 +279,19 @@ aside{
 @media screen and (min-width: 481px) and (max-width : 697px){
 
   .aside__title{
-    width: 60%;
+    width: 40%;
     padding: 2%;
     margin: 2% auto;
   }
 
   .aside-title--big-txt {
     text-align: center;
-    font-size: 5em;
+    font-size: 3.2em;
     font-family: 'Ubuntu',sans-serif;
   }
 
   .aside--subtitle {
-    width: 50%;
+    width: 30%;
     padding: 2%;
     margin: 2% auto;
   }
@@ -299,44 +299,44 @@ aside{
   .aside-subtitle--photo {
     text-align: center;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 3em;
     font-family: 'Indie Flower',sans-serif;
   }
 
   .img--yin{
     display: block;
-    width: 90%;
+    width: 40%;
     padding: 2%;
     margin: 2% auto;
   }
 
   .aside__txt {
-    width: 70%;
+    width: 50%;
     padding: 2%;
     margin: 2% auto;
   }
 
   .aside__txt-color{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-family: 'Ubuntu',sans-serif;
   }
 
   .aside__more-things {
-    width: 50%;
+    width: 30%;
     padding: 2%;
     margin: 2% auto;
   }
 
   .aside__more--things-cool {
     text-align: center;
-    font-size: 3.0em;
+    font-size: 2.0em;
     font-weight: bolder;
     font-family: 'Indie Flower',sans-serif;
   }
 
   .aside__txt-detail{
-    width: 80%;
+    width: 60%;
     padding: 2%;
     margin: 2% auto;
   }
@@ -356,7 +356,7 @@ aside{
   }
 
   .aside__img {
-    width: 90%;
+    width: 50%;
     height: auto;
     margin: 5% auto;
     background-repeat: no-repeat;

@@ -1,0 +1,76 @@
+/* 
+    Created on : 13-sep-2019, 14:51:22
+    Author     : RVS
+*/
+
+main{
+  width: 30%;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.main--decorate{
+  text-align: center;
+  background-image: linear-gradient(to top,#ccc,#aaa);
+  border-radius: 10px;
+}
+
+h2{
+  width: 80%;
+  padding: 1%;
+  margin: 5% auto;
+}
+
+.h2--title-big {
+  font-size: 1em;
+  font-family: 'Orbitron' ,sans-serif;
+  background-image: linear-gradient(to top,#aaa,#ccc);
+  border: 5px solid #aaa;
+  border-radius: 12px;
+}
+
+section{
+  background-image: linear-gradient(to top,#aaa,#555,#aaa);
+}
+
+.borde-gris{
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+  main{
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+
+  .main--decorate{
+    text-align: center;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+    border-radius: 10px;
+  }
+
+  h2{
+    width: 80%;
+    padding: 1%;
+    margin: 5% auto;
+  }
+
+  .h2--title-big{
+    font-size: 4em;
+    font-family: 'Orbitron' ,sans-serif;
+    background-image: linear-gradient(to top,#aaa,#ccc);
+    border: 5px solid #aaa;
+    border-radius: 12px;
+  }
+
+  section{
+    background-image: linear-gradient(to top,#aaa,#555,#aaa);
+  }
+
+  .borde-gris{
+    border: 1px solid #000;
+  }
+
+}

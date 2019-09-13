@@ -1,0 +1,102 @@
+/* 
+    Created on : 13-sep-2019, 14:51:22
+    Author     : RVS
+*/
+
+main{
+  width: 30%;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.main--decorate{
+  text-align: center;
+  background-image: linear-gradient(to top,#ccc,#aaa);
+  border-radius: 10px;
+}
+
+h2{
+  width: 80%;
+  padding: 1%;
+  margin: 5% auto;
+}
+
+.h2--title-big{
+  font-size: 3em;
+  font-family: 'Orbitron' ,sans-serif;
+  background-image: linear-gradient(to top,#aaa,#ccc);
+  border: 5px solid #aaa;
+  border-radius: 12px;
+}
+
+section{
+  background-image: linear-gradient(to top,#aaa,#555,#aaa);
+}
+
+audio{
+  width: 100%;
+  height: 25px;
+}
+
+.audio--custom{
+  background-color: #000;
+}
+
+video{
+  width: 95%;
+  height: auto;
+}
+
+.video--custom{
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+  main{
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+  }
+
+  .main--decorate{
+    text-align: center;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+    border-radius: 10px;
+  }
+
+  h2{
+    width: 80%;
+    padding: 1%;
+    margin: 5% auto;
+  }
+
+  .h2--title-big{
+    font-size: 4em;
+    font-family: 'Orbitron' ,sans-serif;
+    background-image: linear-gradient(to top,#aaa,#ccc);
+    border: 5px solid #aaa;
+    border-radius: 12px;
+  }
+
+  section{
+    background-image: linear-gradient(to top,#aaa,#555,#aaa);
+  }
+
+  audio{
+    width: 100%;
+    height: 50px;
+  }
+
+  .audio--custom{
+  }
+
+  video{
+    width: 95%;
+  }
+
+  .video--custom{
+    border-radius: 5px;
+  }
+
+}

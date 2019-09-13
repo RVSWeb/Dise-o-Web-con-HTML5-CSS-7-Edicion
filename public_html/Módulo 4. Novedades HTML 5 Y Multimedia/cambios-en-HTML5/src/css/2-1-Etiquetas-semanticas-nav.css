@@ -22,12 +22,12 @@ nav{
 nav a {
   display: block;
   float: left;
-  padding: 14px 20px;
+  padding: 3% 3%;
+  color: white;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Indie Flower", sans-serif;
-  color: white;
 }
 
 /* Right-aligned link */
@@ -59,3 +59,28 @@ nav a:hover , a.right:hover{
   }
 }
 
+@media screen and (min-width: 322px) and (min-width: 601px) {
+
+  *{
+    box-sizing: border-box;
+  }
+
+  nav{
+    width: 100%;
+    overflow: hidden;
+    background-color: #333; 
+    padding: 1%;
+  }
+
+  nav a {
+    display: block;
+    float: left;
+    padding: 10%;
+    font-size: 9.5em;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Indie Flower", sans-serif;
+    color: white;
+  }
+
+}
