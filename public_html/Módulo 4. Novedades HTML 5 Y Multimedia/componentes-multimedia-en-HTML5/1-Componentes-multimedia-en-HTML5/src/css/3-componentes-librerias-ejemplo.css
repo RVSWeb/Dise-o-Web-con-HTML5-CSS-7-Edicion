@@ -1,0 +1,74 @@
+/* 
+    Created on : 14-sep-2019, 20:53:34
+    Author     : RVS
+*/
+
+header{
+  width: 75%;
+  height: auto;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.header--deco{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Orbitron',sans-serif;
+  background-image: linear-gradient(to top,#ccc,#aaa);
+  border-radius: 12px;
+}
+
+hgroup{
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.header__hgroup--deco{
+  background-color: #fff;
+  border-radius: 12px;
+  background-image: linear-gradient(to top,#fff,#ccc);
+}
+
+h2{
+  width: 50%;
+  margin: 5% auto;
+  padding: 1%;
+}
+
+.crono--deco {
+  border-radius: 12px;
+  background-color: #4e555b;
+}
+
+div{
+  position: relative;
+  padding: 1%;
+}
+
+.box-clock-chrono{
+  position: relative;
+  left: 15%;
+  width: 80%;
+  background-image: linear-gradient(to top,#ccc,#aaa);
+}
+
+h3{
+  width: 50%;
+  margin: 5% auto;
+  padding: 1%;
+}
+
+.temp--deco {
+  border-radius: 12px;
+  background-color: #4e555b;
+}
+
+.box-clock-tempo{
+  width: 95%;
+  background-image: linear-gradient(to top,#ccc,#aaa);
+}
+
+.flip-clock-label{
+  padding: 10%;
+  font-size: 2em;
+}

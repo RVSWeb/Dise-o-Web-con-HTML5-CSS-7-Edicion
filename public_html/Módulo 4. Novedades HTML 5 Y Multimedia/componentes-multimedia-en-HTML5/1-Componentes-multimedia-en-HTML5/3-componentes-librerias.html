@@ -15,6 +15,7 @@ Ref :
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#4285f4">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
     <!-- generics -->
     <link rel="icon" href="../../cambios-en-HTML5/src/img/icons/Icon-32.png" sizes="32x32">
     <link rel="icon" href="../../cambios-en-HTML5/src/img/icons/Icon-57.png" sizes="57x57">
@@ -23,7 +24,7 @@ Ref :
     <link rel="icon" href="../../cambios-en-HTML5/src/img/icons/Icon-128.png" sizes="128x128">
     <link rel="icon" href="../../cambios-en-HTML5/src/img/icons/Icon-192.png" sizes="192x192">
     <!-- Android -->
-    <link rel="shortcut icon" sizes="192x192" href="../../cambios-en-HTML5/src/img/icons/Icon-192.png">
+    <link rel="icon" sizes="192x192" href="../../cambios-en-HTML5/src/img/icons/Icon-192.png">
     <!-- iOS -->
     <link rel="apple-touch-icon" href="../../cambios-en-HTML5/src/img/icons/Icon-120.png" sizes="120x120">
     <link rel="apple-touch-icon" href="../../cambios-en-HTML5/src/img/icons/Icon-152.png" sizes="152x152">
@@ -37,24 +38,39 @@ Ref :
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap">  
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="src/css/2-componentes-canvas.css">
+    <link rel="stylesheet" type="text/css" href="src/css/3-flipclock.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="src/library/flipclock.min.js"></script>
   </head>
   <body>
 
-    <main class="main--decorate">
-      <h2 class="h2--title-big">Canvas</h2>
-      <section class="main__section--decorate">
-      </section>
-    </main>
+    <div class="clock"></div>
+    <div class="message"></div>
 
-    <canvas id="lienzo-1" class="borde-gris" width="300" height="200"></canvas>
+    <script>
 
-    <script src="src/script/js/2-componentes-canvas-simplificado.js"></script>
-    <script src="src/script/js/2-componentes-canvas.js"></script>
+      var clock = null;
+      
+      $(function () {
+        var clock;
+        clock = $('.clock').FlipClock({
+          clockFace: 'DailyCounter',
+          autoStart: false,
+          callbacks: {
+            stop: function () {
+              $('.message').html('The clock has stopped!');
+            }
+          }
+        });
+
+        clock.setTime(220880);
+//        clock.setTime(100); // seg to minutes
+        clock.setCountdown(true);
+        clock.start();
+      });
+
+
+    </script>
   </body>
 </html>

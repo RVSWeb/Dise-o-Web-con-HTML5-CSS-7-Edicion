@@ -33,6 +33,10 @@ section{
   background-image: linear-gradient(to top,#aaa,#555,#aaa);
 }
 
+canvas{
+  margin: 2%;
+}
+
 .borde-gris{
   border: 1px solid #000;
 }
@@ -63,6 +67,10 @@ section{
     background-image: linear-gradient(to top,#aaa,#ccc);
     border: 5px solid #aaa;
     border-radius: 12px;
+  }
+
+  canvas{
+    margin: 2%;
   }
 
   section{

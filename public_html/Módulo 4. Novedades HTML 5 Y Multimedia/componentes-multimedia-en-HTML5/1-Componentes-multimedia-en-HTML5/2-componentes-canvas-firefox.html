@@ -39,12 +39,26 @@ Ref :
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="src/css/2-componentes-canvas.css">
+    <style>
+      canvas{
+        border: 1px solid #000;
+      }
+    </style>
+    <script>
+      function draw() {
+        var canvas = document.getElementById('tutorial');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body onload="draw()">
 
     <main class="main--decorate">
       <h2 class="h2--title-big">Canvas</h2>
@@ -52,9 +66,7 @@ Ref :
       </section>
     </main>
 
-    <canvas id="lienzo-1" class="borde-gris" width="300" height="200"></canvas>
+    <canvas id="tutorial" width="150" height="150"></canvas>
 
-    <script src="src/script/js/2-componentes-canvas-simplificado.js"></script>
-    <script src="src/script/js/2-componentes-canvas.js"></script>
   </body>
 </html>
