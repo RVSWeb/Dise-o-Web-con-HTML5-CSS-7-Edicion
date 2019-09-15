@@ -72,3 +72,76 @@ h3{
   padding: 10%;
   font-size: 2em;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+  header{
+    width: 95%;
+    height: auto;
+    margin: 1% auto;
+    padding: 1%;
+  }
+
+  .header--deco{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Orbitron',sans-serif;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+    border-radius: 12px;
+  }
+
+  hgroup{
+    margin: 1% auto;
+    padding: 1%;
+  }
+
+  .header__hgroup--deco{
+    background-color: #fff;
+    background-image: linear-gradient(to top,#fff,#ccc);
+  }
+
+  h2{
+    width: 60%;
+    margin: 5% auto;
+    padding: 5%;
+  }
+
+  .crono--deco {
+    margin: 15%;
+    border-radius: 12px;
+    background-color: #4e555b;
+  }
+
+  div{
+    position: relative;
+  }
+
+  .box-clock-chrono{
+    position: relative;
+    left: 1%;
+    width: 80%;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  h3{
+    width: 60%;
+    margin: 5% auto;
+    padding: 5%;
+  }
+
+  .temp--deco {
+    margin: 15%;
+    font-size: 1.5em;
+    background-color: #4e555b;
+  }
+
+  .box-clock-tempo{
+    width: 95%;
+    background-image: linear-gradient(to top,#ccc,#aaa);
+  }
+
+  .flip-clock-label{
+    display: block !important;
+  }
+
+}
