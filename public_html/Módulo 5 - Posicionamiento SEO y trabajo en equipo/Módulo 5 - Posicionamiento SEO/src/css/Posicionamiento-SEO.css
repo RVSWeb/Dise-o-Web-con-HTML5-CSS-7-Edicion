@@ -1,0 +1,125 @@
+/* 
+    Created on : 15-sep-2019, 18:15:54
+    Author     : RVS
+*/
+
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: auto;
+  padding: 1%;
+}
+
+.main--deco{
+  background-color: #cbf1f5;
+}
+
+section{
+  width: 45%;
+
+}
+
+.section__box-1 {
+  padding: 1%;
+  margin: 1% auto;
+}
+
+.section__box-1--deco {
+  text-align: center;
+  border-radius: 12px;
+  background-image: linear-gradient(to bottom,#a6e3e9,#fff);
+}
+
+.section__title {
+  width: 80%;
+  height: auto;
+  padding: 5%;
+  margin: 1% auto;
+}
+
+.title--deco{
+  background-color: #71c9ce;
+}
+
+.section__txt {
+  width: 80%;
+  height: auto;
+  padding: 10%;
+  margin: 1% auto;
+}
+
+.section-txt--deco{
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #71c9ce;
+  border-radius: 12px;
+}
+
+.st-link {
+  width: 50%;
+  display: block;
+  margin: 5% auto;
+  padding: 5%;
+}
+
+.st-link--deco {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: #000;
+  background-color: #c2e0c2;
+  border-radius: 12px;
+}
+
+.section__box-2 {
+  padding: 2%;
+  margin: 1% auto;
+}
+
+.main__box-2--deco {
+  border-radius: 12px;
+  background-image: linear-gradient(to bottom,#a6e3e9,#fff);
+} 
+
+.main__sub-title {
+  width: 100%;
+  margin: 1% auto;
+  padding: 1%;    
+}
+
+.title--deco{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Roboto',sans-serif;
+}
+
+.main__img-placa {
+  width: 100%;
+  height: auto;
+  margin: 1% auto;
+}
+
+.img-placa--deco {
+  border-radius: 12px;
+}
+
+figcaption{
+  width: 80%;
+  margin: 1% auto;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 12px;
+  background-color: #c2e0c2;
+}
